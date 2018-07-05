@@ -243,6 +243,7 @@ export default {
               placeholderText:"输入小区名查找二手房",
               swiperOption:{
                   autoplay:true
+
               },
           }
     },
