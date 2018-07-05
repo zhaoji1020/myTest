@@ -1,0 +1,109 @@
+.reg-content{
+  width: 1100px;
+  margin:30px auto;
+  .main-content{
+    margin: 0 auto;
+    padding: 40px 130px;
+    width: 360px;
+    background: #ffffff;
+    .main-content-top{
+      span{
+        text-align: left;
+        font-size: 28px;
+        color: #666;
+      }
+      a{
+        font-size: 14px;
+        color: #f90;
+        margin-top: 16px;
+      }
+    }
+    .main-content-middle{
+      form i{
+        position: absolute;
+        font-size: 20px;
+        top:18px;
+        left: 8px;
+      }
+      .middle-phone{
+        position: relative;
+        margin-top: 35px;
+        input{
+          width: 328px;
+          height: 54px;
+          padding-left: 30px;
+          font-size: 100%;
+          line-height: 1.15;
+          border: 1px solid #ccc;
+        }
+      }
+      .verify{
+        position: relative;
+        margin-top: 20px;
+        i{
+          position: absolute;
+          font-size: 20px;
+          top:18px;
+          left: 8px;
+          color: #666666;
+        }
+        input{
+          width: 206px;
+          height: 54px;
+          padding-left: 30px;
+          font-size: 100%;
+          line-height: 1.15;
+          border: 1px solid #ccc;
+        }
+        button{
+          height: 54px;
+          width: 110px;
+          margin-left: 12px;
+          border: 1px solid #ccc;
+          color: #666666;
+          background: #ffffff;
+          cursor: pointer;
+        }
+      }
+      .password{
+        position: relative;
+        margin-top: 20px;
+        input{
+          width: 328px;
+          height: 54px;
+          padding-left: 30px;
+          font-size: 100%;
+          line-height: 1.15;
+          border: 1px solid #ccc;
+        }
+      }
+      .reg-button{
+        button{
+          width: 360px;
+          background: #c30d23;
+          height: 50px;
+          line-height: 50px;
+          margin-top: 20px;
+          color: #ffffff;
+          cursor: pointer;
+          border: none;
+          font-size: 100%;
+        }
+      }
+      .agree-link{
+        width: 361px;
+        font-size: 13px;
+        margin-top: 30px;
+        color:#666666;
+        a{
+          font-weight: 700;
+          color: #000000;
+        }
+      }
+      .err-msg{
+        color: #c30d23;
+        margin-top: 20px;
+      }
+    }
+  }
+}

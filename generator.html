@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+// function * getData() {
+//     let data = yield new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve("3s");
+//         }, 3000);
+//     }).then(res=>{
+//         inerator.next(res);
+//
+//     })
+//     console.log(data)
+//     let secondData = yield new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve("5s");
+//         }, 5000);
+//     }).then(res=>{
+//         inerator.next(res);
+//
+//     })
+//     console.log(secondData)
+//
+// }
+// var inerator = getData();
+// inerator.next();
+    async function getData() {
+        let data = await new Promise((resolve, reject) => {
+            setTimeout(()=>{
+                resolve("3s")
+            },3000)
+        })
+        console.log(data)
+        let secondData = await new Promise((resolve, reject) => {
+            setTimeout(()=>{
+                resolve("5s")
+            },5000)
+        })
+        console.log("5s")
+        return{
+            data,secondData
+        }
+    }
+    getData().then(res=>{
+        console.log(res)
+    });
+</script>
+</html>
